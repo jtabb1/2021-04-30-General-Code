@@ -38,16 +38,16 @@ function arraySumIterative(array) {
     return sum;
   }
   
-  function arraySum(array) {
+function arraySum(array) {
     // base case
     if (array.length === 0) {
       return 0;
     }
     // recursive case must move towards the base case
     return array[0] + arraySum(array.slice(1));
-  }
+}
   
-  const input = [1, 2, 3, 4]; // returns 10;
-  console.log(arraySum(input));
+const input = [1, 2, 3, 4]; // returns 10;
+console.log(arraySum(input));
 
   
